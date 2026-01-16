@@ -4,14 +4,14 @@
       <div class="flex items-center justify-between h-20">
         <!-- Logo -->
         <router-link to="/" class="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-          <span class="text-2xl font-heading font-bold">🌿 Zikomo Garden</span>
+          <span class="text-2xl font-heading font-bold">🌿 Little Heave </span>
         </router-link>
 
         <!-- Desktop Navigation -->
-        <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden md:flex items-center space-x-8 p-3">
           <router-link 
             to="/" 
-            class="nav-link font-medium hover:text-primary-300 transition-colors"
+            class="nav-link font-medium hover:text-primary-300 text-xl transition-colors"
             :class="{ 'text-primary-300 border-b-2 border-primary-300': $route.path === '/' }"
           >
             Home
@@ -42,7 +42,7 @@
         <!-- Mobile Menu Button -->
         <button 
           @click="toggleMenu" 
-          class="md:hidden p-2 rounded-lg hover:bg-primary-800 transition-colors"
+          class="md:hidden p-3 rounded-lg hover:bg-primary-800 transition-colors"
           aria-label="Toggle menu"
         >
           <svg v-if="!isMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -12,7 +12,7 @@
     </header>
 
     <!-- Menu Section -->
-    <section class="py-24 bg-gray-50 min-h-screen">
+    <section class="w-7xl m-auto py-24 bg-gray-50 min-h-screen">
       <div class="container mx-auto px-4">
         <!-- Category Filter -->
         <div class="flex flex-wrap justify-center gap-4 mb-16">

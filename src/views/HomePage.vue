@@ -5,7 +5,7 @@
     <WhyChooseUs />
     
     <!-- Opening Hours / Quick Contact -->
-    <section class="py-16 bg-white border-y border-gray-100">
+    <section class="py-16 w-7xl m-auto bg-white border-y border-gray-100">
       <div class="container mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-center gap-10">
           <div class="flex items-center space-x-6 text-left">
@@ -43,13 +43,13 @@
       <div class="container mx-auto px-4 relative z-10">
         <h2 class="text-4xl md:text-6xl font-heading font-bold mb-8">Ready for a Delicious Journey?</h2>
         <p class="text-xl mb-12 opacity-90 max-w-2xl mx-auto font-body">
-          Join us today and discover why Zikomo Garden is Lilongwe's favorite destination for authentic Malawian cuisine.
+          Join us today and discover why Little Heave is Lilongwe's favorite destination for authentic Malawian cuisine.
         </p>
         <router-link 
-          to="/menu" 
+          to="/contact" 
           class="inline-block px-12 py-5 bg-white text-primary-800 rounded-full font-bold text-xl hover:bg-primary-50 transition-all shadow-2xl"
         >
-          Book Your Table
+          Get In Touch
         </router-link>
       </div>
       <!-- Background leaf pattern SVG or something -->
@@ -59,7 +59,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import HeroSection from '../components/home/HeroSection.vue';
 import FeaturedDishes from '../components/home/FeaturedDishes.vue';
 import WhyChooseUs from '../components/home/WhyChooseUs.vue';

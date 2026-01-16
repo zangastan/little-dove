@@ -12,7 +12,7 @@ const routes: RouteRecordRaw[] = [
     name: 'Home',
     component: HomePage,
     meta: {
-      title: 'Home - Zikomo Garden Restaurant'
+      title: 'Home - Little Heave Restaurant'
     }
   },
   {
@@ -20,7 +20,7 @@ const routes: RouteRecordRaw[] = [
     name: 'About',
     component: AboutPage,
     meta: {
-      title: 'About Us - Zikomo Garden Restaurant'
+      title: 'About Us - Little Heave Restaurant'
     }
   },
   {
@@ -28,7 +28,7 @@ const routes: RouteRecordRaw[] = [
     name: 'Menu',
     component: MenuPage,
     meta: {
-      title: 'Our Menu - Zikomo Garden Restaurant'
+      title: 'Our Menu - Little Heave Restaurant'
     }
   },
   {
@@ -36,7 +36,7 @@ const routes: RouteRecordRaw[] = [
     name: 'Contact',
     component: ContactPage,
     meta: {
-      title: 'Contact Us - Zikomo Garden Restaurant'
+      title: 'Contact Us - Little Heave Restaurant'
     }
   }
 ];
@@ -55,7 +55,7 @@ const router = createRouter({
 
 // Update document title on route change
 router.beforeEach((to, from, next) => {
-  document.title = (to.meta.title as string) || 'Zikomo Garden Restaurant';
+  document.title = (to.meta.title as string) || 'Little Heave Restaurant';
   next();
 });
 

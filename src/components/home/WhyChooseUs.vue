@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
           <h2 class="text-4xl md:text-5xl font-heading font-bold mb-8 leading-tight">
-            Why Choose <br><span class="text-primary-400">Zikomo Garden?</span>
+            Why Choose <br><span class="text-primary-400">Little Heave?</span>
           </h2>
           <p class="text-gray-300 text-lg mb-12">
             Founded with a passion for preserving Malawian culinary heritage, we strive to provide an unparalleled dining experience that celebrates our rich culture.

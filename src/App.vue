@@ -2,7 +2,7 @@
   <div class="min-h-screen flex flex-col">
     <NavBar />
     
-    <main class="flex-grow pt-20">
+    <main class="">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" />
