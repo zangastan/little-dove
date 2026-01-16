@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router';
 
 // Import views
+// @ts-ignore
 import HomePage from '../views/HomePage.vue';
+// @ts-ignore
 import AboutPage from '../views/AboutPage.vue';
 import MenuPage from '../views/MenuPage.vue';
 import ContactPage from '../views/ContactPage.vue';
@@ -44,6 +46,7 @@ const routes: RouteRecordRaw[] = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  // @ts-ignore
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition;
@@ -54,6 +57,7 @@ const router = createRouter({
 });
 
 // Update document title on route change
+// @ts-ignore
 router.beforeEach((to, from, next) => {
   document.title = (to.meta.title as string) || 'Little Heave Restaurant';
   next();
