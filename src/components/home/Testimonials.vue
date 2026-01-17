@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 bg-gray-50 overflow-hidden">
+  <section class="py-24 lg:w-7xl w-auto mx-auto bg-gray-50 overflow-hidden">
     <div class="container mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-heading font-bold text-primary-900 mb-4">Guest Experiences</h2>
@@ -37,10 +37,10 @@
 <script setup lang="ts">
 const testimonials = [
   {
-    text: "The Chambo fish here is the best I've ever had. Truly authentic flavors that remind me of home. A must-visit in Lilongwe!",
+    text: "The Chambo fish here is the best I've ever had. Truly authentic flavors that remind me of home. A must-visit in Rumphi!",
     name: "Tiwonge Banda",
     initials: "TB",
-    location: "Lilongwe, Malawi"
+    location: "Rumphi, Malawi"
   },
   {
     text: "Beautiful atmosphere and excellent service. The Nsima was perfectly prepared. It's the perfect place for a family dinner.",

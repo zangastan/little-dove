@@ -1,6 +1,6 @@
 <template>
-  <section class="py-24 bg-primary-900 text-white">
-    <div class="container mx-auto px-4">
+  <section class=" py-24 bg-primary-900 text-white">
+    <div class="lg:w-7xl w-auto mx-auto container mx-auto px-4">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
           <h2 class="text-4xl md:text-5xl font-heading font-bold mb-8 leading-tight">
@@ -14,7 +14,7 @@
             <div class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-primary-500/50 transition-colors group">
               <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">🥬</div>
               <h3 class="text-xl font-heading font-bold mb-2">Farm Fresh</h3>
-              <p class="text-gray-400">Directly sourced from local farmers in Lilongwe to ensure maximum freshness.</p>
+              <p class="text-gray-400">Directly sourced from local farmers in Rumphi to ensure maximum freshness.</p>
             </div>
             <div class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-primary-500/50 transition-colors group">
               <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">👨‍🍳</div>
@@ -37,7 +37,7 @@
         <div class="relative">
           <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl relative z-10">
             <img 
-              src="https://placehold.co/1000x1000/1B4332/white?text=Authentic+Quality" 
+              src="/meal1.jpg" 
               alt="Fresh Ingredients" 
               class="w-full h-full object-cover"
             />

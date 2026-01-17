@@ -1,6 +1,6 @@
 <template>
   <section class="py-24 bg-white">
-    <div class="container mx-auto px-4">
+    <div class="container lg:w-7xl w-auto mx-auto px-4">
       <div class="text-center mb-16">
         <h2 class="text-4xl md:text-5xl font-heading font-bold text-primary-900 mb-4">Signature Dishes</h2>
         <div class="w-24 h-1.5 bg-primary-600 mx-auto rounded-full"></div>

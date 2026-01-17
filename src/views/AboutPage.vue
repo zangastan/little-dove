@@ -2,12 +2,14 @@
   <div class="about-page">
     <!-- Page Header -->
     <section class="py-24 bg-primary-900 text-white relative overflow-hidden">
-      <div class="container mx-auto px-4 text-center relative z-10">
+      <!-- <div class="container mx-auto px-4 text-center relative z-10">
         <h1 class="text-5xl md:text-6xl font-heading font-bold mb-6">Our Story</h1>
         <p class="text-xl text-primary-300 max-w-2xl mx-auto font-body">
           Preserving Malawian culinary traditions since 20**.
         </p>
-      </div>
+      </div> -->
+
+      <HeaderSection title="Our storty" desc=" Preserving Malawian culinary traditions since 20**."/>
       <div class="absolute inset-0 opacity-10">
         <div class="absolute top-0 left-0 w-96 h-96 bg-primary-400 rounded-full blur-[100px]"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary-600 rounded-full blur-[100px]"></div>
@@ -17,7 +19,7 @@
     </section>
 
     <!-- Content Section -->
-    <section class="w-7xl m-auto py-24 bg-white">
+    <section class="lg:w-7xl m-auto  w-auto py-24 bg-white">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
           <div>
@@ -53,7 +55,7 @@
         </div>
 
         <!-- Mission & Values -->
-        <div class="w-7xl m-auto  grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="lg:w-7xl m-auto  w-auto  grid grid-cols-1 md:grid-cols-3 gap-10">
           <div
             class="text-center p-10 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-xl transition-all border border-transparent hover:border-primary-100 group">
             <div
@@ -86,7 +88,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class=" w-7xl m-auto  py-24 bg-gray-50">
+    <section class=" lg:w-7xl m-auto  w-auto py-24 bg-gray-50">
       <div class="container mx-auto px-4">
         <div class="text-center mb-16">
           <h2 class="text-4xl font-heading font-bold text-primary-900 mb-4">Meet Our Culinary Artists</h2>
@@ -142,6 +144,7 @@
 // import HeroSection from '../components/home/HeroSection.vue';
 
 import { onMounted, ref, onUnmounted } from 'vue';
+import HeaderSection from '../components/home/headerSection.vue';
 
 let YearsCounter = ref(0)
 let partCounter = ref(0)
