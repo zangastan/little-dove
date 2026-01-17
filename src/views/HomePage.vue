@@ -1,5 +1,5 @@
 <template>
-  <div class="home-page lg:max-w-7xl overflow-hidden">
+  <div class="home-page  overflow-hidden">
     <HeroSection />
     <FeaturedDishes />
     <WhyChooseUs />

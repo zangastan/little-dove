@@ -1,13 +1,16 @@
 <template>
   <div class="contact-page">
-    <!-- Header -->
-    <header class="py-20 bg-primary-900 text-white text-center">
-      <div class="container mx-auto px-4">
-        <h1 class="text-5xl md:text-6xl font-heading font-bold mb-4">Get in Touch</h1>
-        <p class="text-xl text-primary-300 max-w-2xl mx-auto">We'd love to hear from you. Book a table or just say
-          hello!</p>
+    <!-- Page Header -->
+    <section class="py-24 bg-primary-900 text-white relative overflow-hidden">
+      <HeaderSection title="Get In Touch" desc="We'd love to hear from you. Book a table or just say
+          hello!" />
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 left-0 w-96 h-96 bg-primary-400 rounded-full blur-[100px]"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary-600 rounded-full blur-[100px]"></div>
       </div>
-    </header>
+
+      <!-- <HeroSection /> -->
+    </section>
 
     <section class="py-24 bg-white">
       <div class="container mx-auto px-4 lg:w-7xl">
@@ -75,41 +78,40 @@
             </div>
           </div>
 
-            <!-- Placeholder Map -->
-            <div
-              class="mt-12 rounded-xl h-64 bg-gray-100 overflow-hidden relative shadow-inner border border-gray-200">
-              <div>
-    <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">
-                
+          <!-- Placeholder Map -->
+          <div class="mt-12 rounded-xl h-64 bg-gray-100 overflow-hidden relative shadow-inner border border-gray-200">
+            <div>
+              <div class="absolute inset-0 flex items-center justify-center text-gray-400 font-medium">
+
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.600270183286!2d34.09619727820019!3d-10.610392962528286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19025f63822a588d%3A0x3d1343191ff12fa1!2slittle%20dove%20hostels!5e0!3m2!1sen!2smw!4v1768632512852!5m2!1sen!2smw"
                   class="w-full h-full" style="border:0;" allowfullscreen="true" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
-                </div>
-          
-              <!-- <img src="https://placehold.co/1000x500/1B4332/white?text=Map+Location+Rumphi" alt="Map pattern"
-                class="w-full h-full object-cover opacity-30 grayscale"> -->
             </div>
- 
+
+            <!-- <img src="https://placehold.co/1000x500/1B4332/white?text=Map+Location+Rumphi" alt="Map pattern"
+                class="w-full h-full object-cover opacity-30 grayscale"> -->
+          </div>
+
         </div>
 
-                 <!-- Contact Form -->
-          <div
-            class="bg-primary-50/50 p-10 lg:w-xl m-auto mt-10 h-auto rounded-3xl border border-primary-100 shadow-sm transition-all duration-300 hover:shadow-xl">
-            <h2 class="text-3xl font-heading font-bold text-primary-900 mb-8">Send Us a Message</h2>
-            <form @submit.prevent="handleSubmit" class="space-y-6">
-              <div class="transition-transform duration-300 focus-within:scale-[1.01]">
-                <label class="block text-primary-900 font-bold mb-2">Full Name</label>
-                <input v-model="form.name" type="text" required placeholder="John Doe"
-                  class="w-full px-5 py-4 rounded-xl border-2 border-gray-100 focus:border-primary-500 focus:outline-none transition-colors">
-              </div>
-              <div class="transition-transform duration-300 focus-within:scale-[1.01]">
-                <label class="block text-primary-900 font-bold mb-2">Email Address</label>
-                <input v-model="form.email" type="email" required placeholder="john@example.com"
-                  class="w-full px-5 py-4 rounded-xl border-2 border-gray-100 focus:border-primary-500 focus:outline-none transition-colors">
-              </div>
-              <!-- <div class="transition-transform duration-300 focus-within:scale-[1.01]">
+        <!-- Contact Form -->
+        <div
+          class="bg-primary-50/50 p-10 lg:w-xl m-auto mt-10 h-auto rounded-3xl border border-primary-100 shadow-sm transition-all duration-300 hover:shadow-xl">
+          <h2 class="text-3xl font-heading font-bold text-primary-900 mb-8">Send Us a Message</h2>
+          <form @submit.prevent="handleSubmit" class="space-y-6">
+            <div class="transition-transform duration-300 focus-within:scale-[1.01]">
+              <label class="block text-primary-900 font-bold mb-2">Full Name</label>
+              <input v-model="form.name" type="text" required placeholder="John Doe"
+                class="w-full px-5 py-4 rounded-xl border-2 border-gray-100 focus:border-primary-500 focus:outline-none transition-colors">
+            </div>
+            <div class="transition-transform duration-300 focus-within:scale-[1.01]">
+              <label class="block text-primary-900 font-bold mb-2">Email Address</label>
+              <input v-model="form.email" type="email" required placeholder="john@example.com"
+                class="w-full px-5 py-4 rounded-xl border-2 border-gray-100 focus:border-primary-500 focus:outline-none transition-colors">
+            </div>
+            <!-- <div class="transition-transform duration-300 focus-within:scale-[1.01]">
                 <label class="block text-primary-900 font-bold mb-2">How can we help?</label>
                 <select v-model="form.subject"
                   class="w-full px-5 py-4 rounded-xl border-2 border-gray-100 focus:border-primary-500 focus:outline-none transition-colors bg-white">
@@ -119,21 +121,21 @@
                   <option value="event">Private Event</option>
                 </select>
               </div> -->
-              <div class="transition-transform duration-300 focus-within:scale-[1.01]">
-                <label class="block text-primary-900 font-bold mb-2">Message</label>
-                <textarea v-model="form.message" rows="5" required placeholder="Tell us more..."
-                  class="w-full px-5 py-4 rounded-xl border-2 border-gray-100 focus:border-primary-500 focus:outline-none transition-colors resize-none"></textarea>
-              </div>
-              <button type="submit"
-                class="w-full py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-bold text-lg shadow-lg transition-all active:scale-[0.98] disabled:opacity-50"
-                :disabled="isSubmitting">
-                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
-              </button>
-              <p v-if="success" class="text-center font-bold text-green-600 animate-bounce">
-                Thank you! We'll get back to you soon.
-              </p>
-            </form>
-          </div>
+            <div class="transition-transform duration-300 focus-within:scale-[1.01]">
+              <label class="block text-primary-900 font-bold mb-2">Message</label>
+              <textarea v-model="form.message" rows="5" required placeholder="Tell us more..."
+                class="w-full px-5 py-4 rounded-xl border-2 border-gray-100 focus:border-primary-500 focus:outline-none transition-colors resize-none"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full py-4 bg-primary-600 hover:bg-primary-700 text-white rounded-xl font-bold text-lg shadow-lg transition-all active:scale-[0.98] disabled:opacity-50"
+              :disabled="isSubmitting">
+              {{ isSubmitting ? 'Sending...' : 'Send Message' }}
+            </button>
+            <p v-if="success" class="text-center font-bold text-green-600 animate-bounce">
+              Thank you! We'll get back to you soon.
+            </p>
+          </form>
+        </div>
       </div>
     </section>
   </div>
@@ -141,6 +143,7 @@
 
 <script setup lang="ts">
 import { reactive, ref } from 'vue';
+import HeaderSection from '../components/home/headerSection.vue';
 
 const form = reactive({
   name: '',

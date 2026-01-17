@@ -87,6 +87,11 @@
       <!-- Bottom Bar -->
       <div class="border-t border-primary-700 pt-8 mt-8">
         <div class="text-center text-gray-400 text-sm">
+          <p>Designed and Developed by: Augustine kasolota - 
+            <a target="_blank" class="text-blue-500" href="https://augustinekasolota.netlify.app/">
+              Check Me Out
+            </a>
+          </p>
           <p>&copy; {{ currentYear }} Little Heave Restaurant. All rights reserved.</p>
         </div>
       </div>
